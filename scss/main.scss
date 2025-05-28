@@ -1,0 +1,9 @@
+@use "./base";
+
+.home {
+    background-color: orange;
+
+    &-wrap {
+        background-color: aqua;
+    }
+}
