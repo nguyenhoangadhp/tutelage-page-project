@@ -1,9 +1,3 @@
 @use "./base";
-
-.home {
-    background-color: orange;
-
-    &-wrap {
-        background-color: aqua;
-    }
-}
+@use "./components";
+@use "./templates";

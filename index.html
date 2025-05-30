@@ -6,10 +6,10 @@
         <title>tutelage</title>
 
         <!-- Css -->
-        <link rel="stylesheet" href="./assets/css/reset.css" />
-        <link rel="stylesheet" href="./assets/css/base.css" />
-        <link rel="stylesheet" href="./assets/css/grid.css" />
         <link rel="stylesheet" href="./assets/css/main.css" />
+
+        <!-- Animate -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
         <!-- Favicon -->
         <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-icon-57x57.png" />
@@ -34,17 +34,103 @@
         <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
     </head>
     <body>
-        <div class="home">
-            <div class="container">
-                <div class="home-wrap">
-                    <h1>You learn today and earn tomorrow.</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum unde eius consequatur, recusandae
-                        nihil est aut pariatur eos sequi molestias magni voluptas adipisci nesciunt commodi ipsa ipsum
-                        ullam accusamus quae!
-                    </p>
-                </div>
+        <!-- Slide show -->
+        <div class="slide-show">
+            <div class="slide-show__wrap">
+                <ul class="slide-show__list animate__animated animate__headShake animate__infinite animate__slower">
+                    <li class="slide-show__title">Get Discount Of 10% On All our Video Courses For a Limited Time</li>
+                    <li class="slide-show__title">Get Discount Of 10% On All our Video Courses For a Limited Time</li>
+                    <li class="slide-show__title">Get Discount Of 10% On All our Video Courses For a Limited Time</li>
+                    <li class="slide-show__title">Get Discount Of 10% On All our Video Courses For a Limited Time</li>
+                </ul>
             </div>
         </div>
+
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header__wrap">
+                    <a href="#" class="header__logo">
+                        <img src="./assets/images/logo.svg" alt="" class="header__logo-icon" />
+                        <img src="./assets/images/logo-name.svg" alt="" class="header__logo-name" />
+                    </a>
+
+                    <!-- Nav -->
+                    <nav class="header-nav">
+                        <ul class="header-nav__list">
+                            <li class="header-nav__item">
+                                <a href="#" class="header-nav__link header-nav__link--active">Home</a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a href="#" class="header-nav__link">Courses</a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a href="#" class="header-nav__link">Mentors</a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a href="#" class="header-nav__link">About</a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a href="#" class="header-nav__link">Blog</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <!-- Login -->
+                    <button class="btn btn--second btn--second-small header-btn">Log In</button>
+                </div>
+
+                <!-- Hero -->
+                <div class="hero">
+                    <!-- Hero content -->
+                    <div class="hero__content">
+                        <h1 class="hero__heading">You learn today and earn tomorrow.</h1>
+                        <p class="hero__desc desc--primary">
+                            You learn today and earn tomorrow. The roots of education are bitter but the fruits are
+                            sweet. If you learn today you can lead tomorrow.
+                        </p>
+                        <div class="hero__btn-group">
+                            <button class="btn hero__btn btn--second">Start Learning</button>
+                            <button class="btn hero__btn btn--second">Explore Courses</button>
+                        </div>
+
+                        <!-- Rating -->
+                        <div class="hero-rating">
+                            <div class="hero-rating__wrap">
+                                <img src="./assets/icons/five-stars.svg" alt="" class="hero-rating__stars" />
+                                <span class="hero-rating__numbers">10000+</span>
+                                <p class="hero-rating__desc desc--primary">Clients reviews (4.5 of 5)</p>
+                                <a href="#!" class="hero-rating__link">All Review</a>
+                            </div>
+                            <div class="hero-rating__decor">
+                                <img src="./assets/images/book.svg" alt="" class="hero-rating__img" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hero media -->
+                    <div class="hero-media">
+                        <div class="hero-media__wrap">
+                            <div class="hero-media__left">
+                                <img src="./assets/images/hero-01.png" alt="" class="hero-media__img" />
+                                <img src="./assets/images/hero-02.png" alt="" class="hero-media__img" />
+                            </div>
+                            <div class="hero-media__right">
+                                <img src="./assets/images/hero-03.png" alt="" class="hero-media__img" />
+                                <img
+                                    src="./assets/images/hero-04.png"
+                                    alt=""
+                                    class="hero-media__img hero-media__img--move"
+                                />
+                                <div class="hero-media__direct">
+                                    <img src="./assets/icons/mouse.svg" alt="" class="hero-media__direct-icon" />
+                                    <p class="hero-media__direct-name desc--primary">Scroll Down</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
     </body>
 </html>
