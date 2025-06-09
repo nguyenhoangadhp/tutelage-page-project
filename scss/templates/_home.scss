@@ -24,7 +24,7 @@
 // Header
 .header {
     padding-top: 30px;
-    background: #fdf0df;
+    background: var(--bg-color);
 
     &__logo {
         display: flex;
@@ -272,6 +272,10 @@
 
         &__btn {
             margin-top: 40px;
+
+            &:hover {
+                opacity: 0.8;
+            }
         }
 
         &__media {
@@ -290,8 +294,11 @@
         }
 
         &__media {
+            height: 100%;
+
             &-img {
                 width: 100%;
+                height: 100%;
             }
         }
 
@@ -317,6 +324,117 @@
 
         &__desc {
             margin-top: 12px;
+        }
+    }
+}
+
+// End providing
+
+// Popular
+.popular-courses {
+    padding: 100px 0;
+    background: var(--bg-color);
+
+    &__heading,
+    &__desc {
+        width: 570px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    &__desc {
+        margin-top: 20px;
+    }
+
+    &__list {
+        margin-top: 70px;
+    }
+
+    &-item {
+        padding: 20px;
+        border-radius: 12px;
+        background: #fff;
+
+        &__img {
+            width: 100%;
+        }
+
+        &__name {
+            margin-top: 20px;
+            color: var(--second-color);
+            font-size: 1.4rem;
+            font-weight: 400;
+            line-height: 171.429%;
+        }
+
+        &__title {
+            margin: 12px 0;
+            font-size: 1.8rem;
+            font-weight: 700;
+            line-height: 155.556%;
+        }
+
+        &__user,
+        &__block {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        &__block-detail {
+            color: var(--desc-text-color);
+        }
+
+        &__analys {
+            margin-top: 17px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__ava {
+            width: 20px;
+            height: 20px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        &__username {
+            color: var(--desc-second-text-color);
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 162.5%;
+        }
+
+        &__bot {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &-price {
+                font-size: 1.8rem;
+                font-weight: 700;
+                line-height: 155.556%;
+            }
+
+            &-btn {
+                transition: all 0.25s;
+            }
+
+            &-btn:hover {
+                border-color: var(--primary-color);
+                background: var(--primary-color);
+            }
+        }
+    }
+
+    &__btn {
+        display: block;
+        margin: 0 auto;
+        margin-top: 55px;
+
+        &:hover {
+            opacity: 0.8;
         }
     }
 }
