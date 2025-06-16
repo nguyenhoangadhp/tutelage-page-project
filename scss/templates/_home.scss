@@ -438,3 +438,59 @@
         }
     }
 }
+// End popular courses
+
+// Feedbacks
+.feedback {
+    margin: 160px 0;
+
+    &-list {
+        margin-top: 70px;
+    }
+
+    &-item {
+        padding: 40px 20px;
+
+        border-radius: 12px;
+        border: 1px solid #e9eaf0;
+        background: #fff;
+
+        &:hover {
+            box-shadow: 0px 16px 42px 0px rgba(0, 0, 0, 0.07);
+            border-color: transparent;
+        }
+    }
+
+    &-reviewer {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;
+
+        &__bot {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        &__img {
+            width: 64px;
+        }
+    }
+
+    &__separate {
+        width: 100%;
+        margin: 20px 0;
+        height: 2px;
+        border-radius: 1px;
+        background: #e9eaf0;
+    }
+
+    &__dashed {
+        display: block;
+        margin: 0 auto;
+        margin-top: 55px;
+        text-align: center;
+    }
+}

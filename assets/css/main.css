@@ -210,6 +210,12 @@ button {
   line-height: 123.81%;
 }
 
+.heading--fourth {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 155.556%;
+}
+
 .row > *, .container-fluid, .container {
   padding-left: calc(var(--grid-gutter-x) * 0.5);
   padding-right: calc(var(--grid-gutter-x) * 0.5);
@@ -1593,6 +1599,51 @@ button {
 }
 .popular-courses__btn:hover {
   opacity: 0.8;
+}
+
+.feedback {
+  margin: 160px 0;
+}
+.feedback-list {
+  margin-top: 70px;
+}
+.feedback-item {
+  padding: 40px 20px;
+  border-radius: 12px;
+  border: 1px solid #e9eaf0;
+  background: #fff;
+}
+.feedback-item:hover {
+  box-shadow: 0px 16px 42px 0px rgba(0, 0, 0, 0.07);
+  border-color: transparent;
+}
+.feedback-reviewer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+.feedback-reviewer__bot {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.feedback-reviewer__img {
+  width: 64px;
+}
+.feedback__separate {
+  width: 100%;
+  margin: 20px 0;
+  height: 2px;
+  border-radius: 1px;
+  background: #e9eaf0;
+}
+.feedback__dashed {
+  display: block;
+  margin: 0 auto;
+  margin-top: 55px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */
