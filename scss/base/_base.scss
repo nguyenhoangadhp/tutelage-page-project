@@ -23,6 +23,10 @@ body {
     --bg-color: #fdf0df;
 }
 
+a {
+    text-decoration: none;
+}
+
 // Common
 button {
     outline: none;
@@ -64,7 +68,25 @@ button {
     }
 }
 
-// Heading - Paragraph
+// Heading - Paragraph / Descript
+.heading--second {
+    font-size: 4.2rem;
+    font-weight: 800;
+    line-height: 123.81%;
+}
+
+.heading-third {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.heading--fourth {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 155.556%;
+}
+
 .desc--primary {
     font-size: 1.8rem;
     color: var(--desc-text-color);
@@ -77,16 +99,4 @@ button {
     color: var(--desc-text-color);
     font-weight: 400;
     line-height: 162.5%;
-}
-
-.heading--second {
-    font-size: 4.2rem;
-    font-weight: 800;
-    line-height: 123.81%;
-}
-
-.heading--fourth {
-    font-size: 1.8rem;
-    font-weight: 700;
-    line-height: 155.556%;
 }
