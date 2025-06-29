@@ -38,7 +38,9 @@
         <!-- Slide show -->
         <div class="slide-show">
             <div class="slide-show__wrap">
-                <ul class="slide-show__list animate__animated animate__headShake animate__infinite animate__slower">
+                <ul
+                    class="slide-show__list animate__animated animate__slideInLeft animate__infinite animate__slower animate__delay-2s"
+                >
                     <li class="slide-show__title">Get Discount Of 10% On All our Video Courses For a Limited Time</li>
                     <li class="slide-show__title">Get Discount Of 10% On All our Video Courses For a Limited Time</li>
                     <li class="slide-show__title">Get Discount Of 10% On All our Video Courses For a Limited Time</li>
@@ -57,7 +59,7 @@
                     </a>
 
                     <!-- Nav -->
-                    <nav class="header-nav">
+                    <nav class="header-nav hide-on-tab">
                         <ul class="header-nav__list">
                             <li class="header-nav__item">
                                 <a href="#" class="header-nav__link header-nav__link--active">Home</a>
@@ -78,7 +80,12 @@
                     </nav>
 
                     <!-- Login -->
-                    <button class="btn btn--second btn--second-small header-btn">Log In</button>
+                    <button class="btn btn--second btn--second-small header-btn hide-on-tab">Log In</button>
+
+                    <!-- Menu mobile -->
+                    <div class="header-menu dp-none show-on-tab">
+                        <i class="fa-solid fa-bars header-menu__icon"></i>
+                    </div>
                 </div>
 
                 <!-- Hero -->
@@ -103,7 +110,7 @@
                                 <p class="hero-rating__desc desc--primary">Clients reviews (4.5 of 5)</p>
                                 <a href="#!" class="hero-rating__link">All Review</a>
                             </div>
-                            <div class="hero-rating__decor">
+                            <div class="hero-rating__decor hide-on-xl">
                                 <img src="./assets/images/book.svg" alt="" class="hero-rating__img" />
                             </div>
                         </div>
@@ -141,17 +148,17 @@
                     <span class="statis-item__num">8K+</span>
                     <p class="statis-item__title">Success Stories</p>
                 </li>
-                <div class="statis__separate"></div>
+                <div class="statis__separate hide-on-xl"></div>
                 <li class="statis-item">
                     <span class="statis-item__num">12K+</span>
                     <p class="statis-item__title">Expert Instructor</p>
                 </li>
-                <div class="statis__separate"></div>
+                <div class="statis__separate hide-on-xl"></div>
                 <li class="statis-item">
                     <span class="statis-item__num">108K+</span>
                     <p class="statis-item__title">Worldwide Students</p>
                 </li>
-                <div class="statis__separate"></div>
+                <div class="statis__separate hide-on-xl"></div>
                 <li class="statis-item">
                     <span class="statis-item__num">310+</span>
                     <p class="statis-item__title">Trendy Subjects</p>
@@ -169,7 +176,7 @@
                     </p>
 
                     <!-- Types -->
-                    <div class="provide-type">
+                    <div class="provide-type hide-on-xl">
                         <div class="provide-type__breadcrumbs">
                             <p class="provide-type__title provide-type__title--active">Recorded Class</p>
                             <p class="provide-type__title">Live Class</p>
@@ -194,7 +201,7 @@
                         </div>
                     </div>
 
-                    <!-- Explore courses -->
+                    <!-- Courses -->
                     <div class="provide-courses">
                         <div class="provide-courses__top grid-item">
                             <h2 class="provide-courses__heading heading--second">Explore courses by category</h2>
@@ -262,7 +269,7 @@
 
                     <!-- List courses -->
                     <div class="popular-courses__list">
-                        <div class="row row-cols-3 gx-3 gy-3">
+                        <div class="row row-cols-3 row-cols-lg-1 gx-3 gy-3">
                             <!-- Course item 1 -->
                             <div class="col">
                                 <div class="popular-courses-item">
@@ -585,7 +592,7 @@
         <!-- Feedbacks -->
         <div class="feedback">
             <div class="container">
-                <div class="row row-cols-2">
+                <div class="row row-cols-2 row-cols-lg-1">
                     <div class="col">
                         <h2 class="heading--second feedback__heading">What our students are saying about us</h2>
                     </div>
@@ -598,10 +605,10 @@
                 </div>
 
                 <div class="feedback-list">
-                    <div class="row row-cols-3">
+                    <div class="row row-cols-3 row-cols-xl-1">
                         <!-- Item 01 -->
                         <div class="col">
-                            <div class="feedback-item">
+                            <div class="feedback-item hide-on-xl">
                                 <h3 class="feedback-item__heading heading--fourth">Great platform</h3>
                                 <div class="feedback-reviewer">
                                     <img src="./assets/icons/quote.svg" alt="" class="feedback-reviewer__icon" />
@@ -673,7 +680,7 @@
 
                         <!-- Item 03 -->
                         <div class="col">
-                            <div class="feedback-item">
+                            <div class="feedback-item hide-on-xl">
                                 <h3 class="feedback-item__heading heading--fourth">Great platform</h3>
                                 <div class="feedback-reviewer">
                                     <img src="./assets/icons/quote.svg" alt="" class="feedback-reviewer__icon" />
@@ -725,8 +732,8 @@
                     <input type="email" placeholder="Enter your email address" class="subs-form__input" />
                     <button class="btn btn--second subs-form__btn">Subscribe</button>
                 </form>
-                <img src="./assets/images/subs-decor-01.svg" alt="" class="subs-decor__left" />
-                <img src="./assets/images/subs-decor-02.svg" alt="" class="subs-decor__right" />
+                <img src="./assets/images/subs-decor-01.svg" alt="" class="subs-decor__left hide-on-tab" />
+                <img src="./assets/images/subs-decor-02.svg" alt="" class="subs-decor__right hide-on-tab" />
             </div>
         </div>
     </body>

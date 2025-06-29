@@ -1,3 +1,5 @@
+@use "../abstracts";
+
 // Slide show
 .slide-show {
     padding: 20px;
@@ -72,6 +74,14 @@
             opacity: 0.9;
         }
     }
+
+    &-menu {
+        margin-left: auto;
+
+        &__icon {
+            font-size: 2.2rem;
+        }
+    }
 }
 
 // Hero
@@ -79,32 +89,69 @@
     display: grid;
     grid-template-columns: 0.8fr 1fr;
     gap: 130px;
+
+    @include abstracts.breakpoint(xl) {
+        grid-template-columns: 1fr;
+        gap: 46px;
+    }
 }
 
 .hero {
     padding: 100px 0;
 
+    @include abstracts.breakpoint(sm) {
+        padding: 30px 0;
+    }
+
     // Content
+    &__content {
+        @include abstracts.breakpoint(md) {
+            padding-right: 20px;
+        }
+    }
+
     &__heading {
         font-size: 6.2rem;
         font-weight: 800;
         line-height: 106.452%;
+
+        @include abstracts.breakpoint(md) {
+            font-size: 4.2rem;
+        }
     }
 
     &__desc {
         margin-top: 14px;
         color: inherit;
+
+        @include abstracts.breakpoint(md) {
+            width: 90%;
+        }
+
+        @include abstracts.breakpoint(sm) {
+            font-size: 1.4rem;
+        }
     }
 
     &__btn-group {
         margin-top: 40px;
         display: flex;
         gap: 18px;
+
+        @include abstracts.breakpoint(md) {
+            display: inline-flex;
+            flex-direction: column;
+        }
     }
 
     &__btn {
+        white-space: nowrap;
         &:hover {
             opacity: 0.9;
+        }
+
+        @include abstracts.breakpoint(sm) {
+            font-size: 1.8rem;
         }
     }
 
@@ -114,6 +161,10 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @include abstracts.breakpoint(md) {
+            margin-top: 38px;
+        }
 
         &__numbers {
             display: block;
@@ -144,6 +195,14 @@
         &__wrap {
             display: flex;
             gap: 30px;
+
+            @include abstracts.breakpoint(xl) {
+                justify-content: center;
+            }
+
+            @include abstracts.breakpoint(md) {
+                gap: 20px;
+            }
         }
 
         &__img {
@@ -151,6 +210,14 @@
 
             &--move {
                 margin-top: -70px;
+
+                @include abstracts.breakpoint(sm) {
+                    margin-top: -40px;
+                }
+            }
+
+            @include abstracts.breakpoint(sm) {
+                width: 164px;
             }
         }
 
@@ -160,6 +227,10 @@
             flex-direction: column;
             gap: 30px;
             height: 100%;
+
+            @include abstracts.breakpoint(sm) {
+                gap: 20px;
+            }
         }
 
         &__direct {
@@ -169,6 +240,21 @@
             &-name {
                 margin-top: 12px;
                 color: inherit;
+
+                @include abstracts.breakpoint(sm) {
+                    margin-top: 8px;
+                    font-size: 1.4rem;
+                }
+            }
+
+            @include abstracts.breakpoint(sm) {
+                margin-top: -10px;
+            }
+
+            &-icon {
+                @include abstracts.breakpoint(sm) {
+                    width: 24px;
+                }
             }
         }
     }
@@ -178,7 +264,10 @@
 .statis {
     background: var(--second-color);
     padding: 70px 30px;
-    margin-bottom: 70px;
+
+    @include abstracts.breakpoint(sm) {
+        padding: 55px 30px;
+    }
 
     &__separate {
         width: 2px;
@@ -192,6 +281,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @include abstracts.breakpoint(xl) {
+            flex-direction: column;
+            gap: 28px;
+        }
     }
 
     &-item {
@@ -202,6 +296,10 @@
             font-size: 4.2rem;
             font-weight: 800;
             line-height: 109.524%;
+
+            @include abstracts.breakpoint(sm) {
+                font-size: 2.6rem;
+            }
         }
 
         &__title {
@@ -209,6 +307,10 @@
             color: #d0d4ff;
             font-size: 1.8rem;
             line-height: 109.524%;
+
+            @include abstracts.breakpoint(sm) {
+                font-size: 1.4rem;
+            }
         }
     }
 }
@@ -216,16 +318,32 @@
 // Providing
 .provide {
     margin-top: 160px;
+    @include abstracts.breakpoint(sm) {
+        margin-top: 100px;
+    }
 
     &__heading,
     &__desc {
         margin: 0 auto;
         text-align: center;
         width: 570px;
+
+        @include abstracts.breakpoint(xl) {
+            max-width: 95%;
+        }
     }
 
     &__desc {
         margin-top: 20px;
+
+        @include abstracts.breakpoint(xl) {
+            margin-bottom: 55px;
+            text-align: center;
+        }
+
+        @include abstracts.breakpoint(sm) {
+            font-size: 1.4rem;
+        }
     }
 
     &-type {
@@ -269,6 +387,11 @@
     &-record {
         align-items: center;
 
+        @include abstracts.breakpoint(xl) {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
         &__desc {
             margin-top: 20px;
         }
@@ -278,6 +401,10 @@
 
             &:hover {
                 opacity: 0.8;
+            }
+
+            @include abstracts.breakpoint(sm) {
+                min-width: 300px;
             }
         }
 
@@ -292,8 +419,17 @@
     &-courses {
         margin: 160px 0;
 
+        @include abstracts.breakpoint(xl) {
+            margin: 50px 0;
+        }
+
         &__top {
             margin-bottom: 70px;
+
+            @include abstracts.breakpoint(sm) {
+                gap: 12px;
+                margin-bottom: 28px;
+            }
         }
 
         &__media {
@@ -309,6 +445,10 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 30px;
+
+            @include abstracts.breakpoint(sm) {
+                grid-template-columns: 1fr;
+            }
         }
 
         &-item {
@@ -338,11 +478,19 @@
     padding: 100px 0;
     background: var(--bg-color);
 
+    @include abstracts.breakpoint(md) {
+        padding: 55px 0;
+    }
+
     &__heading,
     &__desc {
         width: 570px;
         text-align: center;
         margin: 0 auto;
+
+        @include abstracts.breakpoint(md) {
+            width: 95%;
+        }
     }
 
     &__desc {
@@ -447,6 +595,10 @@
 .feedback {
     margin: 160px 0;
 
+    @include abstracts.breakpoint(lg) {
+        margin: 55px 0;
+    }
+
     &-list {
         margin-top: 70px;
     }
@@ -523,11 +675,21 @@
         display: flex;
         gap: 18px;
 
+        @include abstracts.breakpoint(md) {
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+
         &__input {
             border-radius: 8px;
             border: 1px solid #0b0d21;
             width: 393px;
             height: 58px;
+
+            @include abstracts.breakpoint(sm) {
+                width: 350px;
+            }
 
             background-color: transparent;
             padding: 15px;
@@ -546,6 +708,10 @@
         }
 
         &__btn {
+            @include abstracts.breakpoint(md) {
+                width: 204px;
+            }
+
             &:hover {
                 opacity: 0.9;
             }
@@ -578,11 +744,24 @@
     &-cate {
         display: flex;
         justify-content: space-between;
+
+        @include abstracts.breakpoint(xl) {
+            flex-direction: column;
+        }
     }
 
     &-list {
         display: flex;
         gap: 130px;
+
+        @include abstracts.breakpoint(xl) {
+            margin-bottom: 30px;
+        }
+
+        @include abstracts.breakpoint(md) {
+            flex-direction: column;
+            gap: 30px;
+        }
     }
 
     &-item {
@@ -610,6 +789,10 @@
         &__top {
             display: flex;
             gap: 35px;
+
+            @include abstracts.breakpoint(sm) {
+                flex-direction: column;
+            }
         }
 
         &__desc {
@@ -654,5 +837,11 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @include abstracts.breakpoint(lg) {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 30px;
+        }
     }
 }
