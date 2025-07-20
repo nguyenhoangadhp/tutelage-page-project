@@ -2,7 +2,7 @@
 
 // Popular
 .popular-courses {
-    padding: 6px 0 100px 0;
+    padding: 100px 0;
     background: var(--bg-color);
 
     @include abstracts.breakpoint(md) {
