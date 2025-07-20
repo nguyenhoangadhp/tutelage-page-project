@@ -33,6 +33,9 @@
         <!-- Font -->
         <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+        <!-- Scripts -->
+        <script src="./assets/js/scripts.js"></script>
     </head>
     <body>
         <!-- Slide show -->
@@ -50,45 +53,15 @@
         </div>
 
         <!-- Header -->
-        <header class="header">
+        <header class="header" id="header">
+            <script>
+                load("#header", "./template/header.html");
+            </script>
+        </header>
+
+        <!-- Hero -->
+        <div class="hero-wrap">
             <div class="container">
-                <div class="header__wrap">
-                    <a href="/" class="header__logo">
-                        <img src="./assets/images/logo.svg" alt="" class="header__logo-icon" />
-                        <img src="./assets/images/logo-name.svg" alt="" class="header__logo-name" />
-                    </a>
-
-                    <!-- Nav -->
-                    <nav class="header-nav hide-on-tab">
-                        <ul class="header-nav__list">
-                            <li class="header-nav__item">
-                                <a href="/" class="header-nav__link header-nav__link--active">Home</a>
-                            </li>
-                            <li class="header-nav__item">
-                                <a href="./pages/courses.html" class="header-nav__link">Courses</a>
-                            </li>
-                            <li class="header-nav__item">
-                                <a href="#" class="header-nav__link">Mentors</a>
-                            </li>
-                            <li class="header-nav__item">
-                                <a href="#" class="header-nav__link">About</a>
-                            </li>
-                            <li class="header-nav__item">
-                                <a href="#" class="header-nav__link">Blog</a>
-                            </li>
-                        </ul>
-                    </nav>
-
-                    <!-- Login -->
-                    <button class="btn btn--second btn--second-small header-btn hide-on-tab">Log In</button>
-
-                    <!-- Menu mobile -->
-                    <div class="header-menu dp-none show-on-tab">
-                        <i class="fa-solid fa-bars header-menu__icon"></i>
-                    </div>
-                </div>
-
-                <!-- Hero -->
                 <div class="hero grid-item">
                     <!-- Hero content -->
                     <div class="hero__content">
@@ -139,7 +112,7 @@
                     </div>
                 </div>
             </div>
-        </header>
+        </div>
 
         <!-- Statistic -->
         <div class="statis">
@@ -739,95 +712,9 @@
     </body>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-wrap">
-                <!-- Footer categories -->
-                <div class="footer-cate">
-                    <div class="footer-list">
-                        <!-- Footer item 1 -->
-                        <div class="footer-item">
-                            <h3 class="heading-third footer-item__heading">Courses</h3>
-                            <ul class="footer-item-wrap">
-                                <a href="#!"><li class="desc--second footer-item__desc">Classroom Courses</li></a>
-                                <a href="#!"
-                                    ><li class="desc--second footer-item__desc">Virtual Classroom Courses</li></a
-                                >
-                                <a href="#!"><li class="desc--second footer-item__desc">E-Learning Courses</li></a>
-                                <a href="#!"> <li class="desc--second footer-item__desc">University Courses</li></a>
-                                <a href="#!"><li class="desc--second footer-item__desc">University Degree</li></a>
-                            </ul>
-                        </div>
-
-                        <!-- Footer item 2 -->
-                        <div class="footer-item">
-                            <h3 class="heading-third footer-item__heading">Tutelage</h3>
-                            <ul class="footer-item-wrap">
-                                <a href="#!"><li class="desc--second footer-item__desc">About us</li></a>
-                                <a href="#!"><li class="desc--second footer-item__desc">Why Circuit</li></a>
-                                <a href="#!"><li class="desc--second footer-item__desc">Testimonials</li></a>
-                                <a href="#!"><li class="desc--second footer-item__desc">Blog</li></a>
-                                <a href="#!"><li class="desc--second footer-item__desc">Podcasts</li></a>
-                                <a href="#!"><li class="desc--second footer-item__desc">Forum</li></a>
-                            </ul>
-                        </div>
-
-                        <!-- Footer item 3 -->
-                        <div class="footer-item">
-                            <h3 class="heading-third footer-item__heading">Help</h3>
-                            <ul class="footer-item-wrap">
-                                <a href="#!"><li class="desc--second footer-item__desc">Contact us</li></a>
-                                <a href="#!"><li class="desc--second footer-item__desc">Our Venues</li></a>
-                                <a href="#!"><li class="desc--second footer-item__desc">Testimonials</li></a>
-                                <a href="#!"><li class="desc--second footer-item__desc">My account</li></a>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Footer contact -->
-                    <div class="footer-contact">
-                        <div class="footer-contact__top">
-                            <div>
-                                <p class="desc--second">Email us</p>
-                                <a href="mailto:example@gmail.com" class="footer-contact__desc heading-third"
-                                    >email@gmail.com</a
-                                >
-                            </div>
-                            <div>
-                                <p class="desc--second">Call us</p>
-                                <a href="tel:000 1234 5678" class="footer-contact__desc heading-third">000 1234 5678</a>
-                            </div>
-                        </div>
-                        <div class="footer-contact__socials">
-                            <a href="#!" class="footer-contact__socials-img">
-                                <i class="fa-brands fa-facebook-f"></i>
-                            </a>
-                            <a href="#!" class="footer-contact__socials-img">
-                                <i class="fa-brands fa-linkedin-in"></i>
-                            </a>
-                            <a href="#!" class="footer-contact__socials-img">
-                                <i class="fa-brands fa-twitter"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-separate"></div>
-
-                <!-- Copy right / Bottom -->
-                <div class="footer-copyright">
-                    <a href="#" class="header__logo">
-                        <img src="./assets/images/logo.svg" alt="" class="header__logo-icon" />
-                        <img src="./assets/images/logo-name.svg" alt="" class="header__logo-name" />
-                    </a>
-
-                    <div class="footer-copyright__payment">
-                        <a href="#!"
-                            ><img src="./assets/icons/payment.svg" alt="" class="footer-copyright__payment-link"
-                        /></a>
-                    </div>
-                    <p class="desc--second">Copyright © 2022 UIHUT all rights reserved.</p>
-                </div>
-            </div>
-        </div>
+    <footer class="footer" id="footer">
+        <script>
+            load("#footer", "./template/footer.html");
+        </script>
     </footer>
 </html>

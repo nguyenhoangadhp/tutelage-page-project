@@ -1320,7 +1320,7 @@ button {
 }
 
 .header {
-  padding-top: 30px;
+  padding: 30px 0;
   background: var(--bg-color);
 }
 .header__logo {
@@ -1475,6 +1475,10 @@ button {
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 155.556%;
+  transition: 0.5s all;
+}
+.hero-rating__link:hover {
+  transform: translateX(20px);
 }
 .hero-media__wrap {
   display: flex;
@@ -1735,104 +1739,6 @@ button {
   margin-top: 12px;
 }
 
-.popular-courses {
-  padding: 100px 0;
-  background: var(--bg-color);
-}
-@media (max-width: 767.98px) {
-  .popular-courses {
-    padding: 55px 0;
-  }
-}
-.popular-courses__heading, .popular-courses__desc {
-  width: 570px;
-  text-align: center;
-  margin: 0 auto;
-}
-@media (max-width: 767.98px) {
-  .popular-courses__heading, .popular-courses__desc {
-    width: 95%;
-  }
-}
-.popular-courses__desc {
-  margin-top: 20px;
-}
-.popular-courses__list {
-  margin-top: 70px;
-}
-.popular-courses-item {
-  padding: 20px;
-  border-radius: 12px;
-  background: #fff;
-}
-.popular-courses-item__img {
-  width: 100%;
-}
-.popular-courses-item__name {
-  margin-top: 20px;
-  color: var(--second-color);
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 171.429%;
-}
-.popular-courses-item__title {
-  margin: 12px 0;
-  font-size: 1.8rem;
-  font-weight: 700;
-  line-height: 155.556%;
-}
-.popular-courses-item__user, .popular-courses-item__block {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.popular-courses-item__block-detail {
-  color: var(--desc-text-color);
-}
-.popular-courses-item__analys {
-  margin-top: 17px;
-  display: flex;
-  justify-content: space-between;
-}
-.popular-courses-item__ava {
-  width: 20px;
-  height: 20px;
-  object-fit: cover;
-  border-radius: 50%;
-}
-.popular-courses-item__username {
-  color: var(--desc-second-text-color);
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 162.5%;
-}
-.popular-courses-item__bot {
-  margin-top: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.popular-courses-item__bot-price {
-  font-size: 1.8rem;
-  font-weight: 700;
-  line-height: 155.556%;
-}
-.popular-courses-item__bot-btn {
-  transition: all 0.25s;
-}
-.popular-courses-item__bot-btn:hover {
-  border-color: var(--primary-color);
-  background: var(--primary-color);
-}
-.popular-courses__btn {
-  display: block;
-  margin: 0 auto;
-  margin-top: 55px;
-}
-.popular-courses__btn:hover {
-  opacity: 0.8;
-}
-
 .feedback {
   margin: 160px 0;
 }
@@ -2046,6 +1952,104 @@ button {
     align-items: flex-start;
     gap: 30px;
   }
+}
+
+.popular-courses {
+  padding: 6px 0 100px 0;
+  background: var(--bg-color);
+}
+@media (max-width: 767.98px) {
+  .popular-courses {
+    padding: 55px 0;
+  }
+}
+.popular-courses__heading, .popular-courses__desc {
+  width: 570px;
+  text-align: center;
+  margin: 0 auto;
+}
+@media (max-width: 767.98px) {
+  .popular-courses__heading, .popular-courses__desc {
+    width: 95%;
+  }
+}
+.popular-courses__desc {
+  margin-top: 20px;
+}
+.popular-courses__list {
+  margin-top: 70px;
+}
+.popular-courses-item {
+  padding: 20px;
+  border-radius: 12px;
+  background: #fff;
+}
+.popular-courses-item__img {
+  width: 100%;
+}
+.popular-courses-item__name {
+  margin-top: 20px;
+  color: var(--second-color);
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 171.429%;
+}
+.popular-courses-item__title {
+  margin: 12px 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 155.556%;
+}
+.popular-courses-item__user, .popular-courses-item__block {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.popular-courses-item__block-detail {
+  color: var(--desc-text-color);
+}
+.popular-courses-item__analys {
+  margin-top: 17px;
+  display: flex;
+  justify-content: space-between;
+}
+.popular-courses-item__ava {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.popular-courses-item__username {
+  color: var(--desc-second-text-color);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 162.5%;
+}
+.popular-courses-item__bot {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.popular-courses-item__bot-price {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 155.556%;
+}
+.popular-courses-item__bot-btn {
+  transition: all 0.25s;
+}
+.popular-courses-item__bot-btn:hover {
+  border-color: var(--primary-color);
+  background: var(--primary-color);
+}
+.popular-courses__btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 55px;
+}
+.popular-courses__btn:hover {
+  opacity: 0.8;
 }
 
 .popular-tropics-item {
