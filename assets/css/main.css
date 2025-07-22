@@ -1373,6 +1373,11 @@ button {
 .header-menu__icon {
   font-size: 2.2rem;
 }
+@media (max-width: 991.98px) {
+  .header--courses {
+    display: none;
+  }
+}
 
 .grid-item {
   display: grid;
@@ -1388,6 +1393,9 @@ button {
 
 .hero {
   padding: 100px 0;
+}
+.hero-wrap {
+  background: var(--bg-color);
 }
 @media (max-width: 575.98px) {
   .hero {
