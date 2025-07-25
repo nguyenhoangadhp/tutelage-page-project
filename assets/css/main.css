@@ -186,6 +186,7 @@ button {
   color: #fff;
 }
 .btn--second-small {
+  font-size: 1.6rem;
   padding: 8px 25px;
 }
 .btn--text {
@@ -237,30 +238,30 @@ button {
 }
 
 .dp-none {
-  display: none;
+  display: none !important;
 }
 
 @media (max-width: 1199.98px) {
   .hide-on-xl {
-    display: none;
+    display: none !important;
   }
 }
 
 @media (max-width: 991.98px) {
   .hide-on-tab {
-    display: none;
+    display: none !important;
   }
 }
 
 @media (max-width: 991.98px) {
   .show-on-tab {
-    display: block;
+    display: block !important;
   }
 }
 
 @media (max-width: 1399.98px) {
   .hide-on-desk {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -1319,9 +1320,12 @@ button {
   line-height: 155.556%;
 }
 
-.header {
+.header__inner {
   padding: 30px 0;
   background: var(--bg-color);
+}
+.header__inner--pricing {
+  background-color: #fff;
 }
 .header__logo {
   display: flex;
@@ -1372,6 +1376,10 @@ button {
 }
 .header-menu__icon {
   font-size: 2.2rem;
+}
+.header-menu--courses {
+  margin-right: auto;
+  margin-left: 0;
 }
 @media (max-width: 991.98px) {
   .header--courses {
@@ -2161,6 +2169,93 @@ button {
   .popular-tropics__instruct-next {
     transform: translateX(0);
   }
+}
+
+.pricing-cards {
+  margin: 70px 0 100px 0;
+}
+.pricing__heading {
+  text-align: center;
+}
+@media (max-width: 991.98px) {
+  .pricing__heading {
+    font-size: 4.2rem;
+  }
+}
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 30px 40px;
+  border-radius: 20px;
+  border: 1px solid #e9eaf0;
+  background: #fff;
+  transition: all 0.25s;
+}
+@media (max-width: 991.98px) {
+  .pricing-card {
+    padding: 30px 22px;
+  }
+}
+.pricing-card:hover {
+  background: #111727;
+  border-color: transparent;
+}
+.pricing-card:hover .pricing-card__type, .pricing-card:hover .pricing-card__cost-title, .pricing-card:hover .pricing-card__cost-time {
+  color: #fff;
+}
+.pricing-card:hover .pricing-card__desc, .pricing-card:hover .pricing-card-item__desc {
+  color: #cdd0db;
+}
+.pricing-card:hover .pricing-card__btn {
+  background: var(--primary-color);
+  color: initial;
+}
+.pricing-card__type {
+  font-size: 2rem;
+  color: #000;
+  font-weight: 500;
+  line-height: 170%;
+}
+.pricing-card__cost {
+  display: flex;
+  align-items: baseline;
+}
+.pricing-card__cost-title {
+  font-size: 5.6rem;
+  font-weight: 700;
+  line-height: 172.283%;
+}
+.pricing-card__cost-time {
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 162.5%;
+}
+.pricing-card__desc {
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 120%;
+}
+.pricing-card-list {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.pricing-card-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.pricing-card-item__desc {
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 120%;
 }
 
 /*# sourceMappingURL=main.css.map */

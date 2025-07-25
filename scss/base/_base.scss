@@ -59,6 +59,7 @@ button {
         color: #fff;
 
         &-small {
+            font-size: 1.6rem;
             padding: 8px 25px;
         }
     }
@@ -113,29 +114,29 @@ button {
 
 // Responsive
 .dp-none {
-    display: none;
+    display: none !important;
 }
 
 .hide-on-xl {
     @include abstracts.breakpoint(xl) {
-        display: none;
+        display: none !important;
     }
 }
 
 .hide-on-tab {
     @include abstracts.breakpoint(lg) {
-        display: none;
+        display: none !important;
     }
 }
 
 .show-on-tab {
     @include abstracts.breakpoint(lg) {
-        display: block;
+        display: block !important;
     }
 }
 
 .hide-on-desk {
     @include abstracts.breakpoint(xxl) {
-        display: none;
+        display: none !important;
     }
 }
