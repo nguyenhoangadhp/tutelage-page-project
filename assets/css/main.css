@@ -2258,4 +2258,16 @@ button {
   line-height: 120%;
 }
 
+.mentors {
+  background: var(--bg-color);
+}
+.mentors__heading {
+  text-align: center;
+}
+@media (max-width: 991.98px) {
+  .mentors__heading {
+    font-size: 4.2rem;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
